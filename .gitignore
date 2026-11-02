@@ -1,0 +1,12 @@
+# Claude Code 개인 설정
+.claude/
+
+# 편집기·OS 파일
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Apps Script 백엔드 (시트·스크립트 ID 포함, 공개 저장소에서 제외)
+server/
