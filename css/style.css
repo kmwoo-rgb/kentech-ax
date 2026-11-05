@@ -550,6 +550,7 @@ button { cursor: pointer; border: 0; background: none; padding: 0; }
 .form-downloads span { font-weight: 700; color: var(--ink); }
 .form-downloads a { padding: 4px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--text); }
 .form-downloads a:hover { border-color: var(--accent); color: var(--accent); }
+.form-files .form-downloads { margin: 0; }
 
 .form-stack { display: flex; flex-direction: column; gap: 12px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }

@@ -126,25 +126,17 @@
       ['이석주', 'Visual Intelligence Energy-Wise (Viewlab)'], ['임혁', 'Sustainable AI Lab'],
     ]],
     ['에너지신소재', [
-      ['곽준섭', 'Information & Opto-Energy Materials (IOEM) Lab'], ['서동한', 'Plasma Nanoscience Lab for Sustainable Energy & Environment'],
       ['송주현', 'Battery Software Group'], ['오상호', 'Electron Microscopy for Energy Materials via Environment Manipulation (eM3)'],
-      ['윤재호', 'NextGen Photovoltaic Materials & Devices Lab (PMDL)'], ['이승진', 'Hybrid Optoelectronics Laboratory'],
-      ['장재형', 'Microwave Integrated Device And System (MIDAS)'], ['정의혁', 'THE LAB'],
+      ['윤재호', 'NextGen Photovoltaic Materials & Devices Lab (PMDL)'],
     ]],
     ['차세대그리드', [
-      ['김승완', 'Smart Energy Network Design (SEND) Lab'], ['김집', 'Electric Grid Optimization Lab'], ['김희태', 'Grid Complexity Lab'],
-      ['박화평', 'AI-PEL'], ['이진오', 'Power Systems Laboratory'],
+      ['김희태', 'Grid Complexity Lab'], ['박화평', 'AI-PEL'], ['이진오', 'Power Systems Laboratory'],
     ]],
     ['수소에너지', [
-      ['구근호', 'Meta Lab'], ['배기호', 'Multiscale Structuring and Characterization (MSC) Lab'],
-      ['이영덕', 'Hybrid EneRgy systems and Optimization Laboratory (HERO Lab)'], ['한종희', 'Hydrogen to Chemicals (H2X) Lab'],
-      ['홍종욱', 'Advanced Energy Material Lab'], ['황지현', 'HYdrogen Liquefaction & value chain Optimization Technologies (HYLOT)'],
+      ['구근호', 'Meta Lab'],
     ]],
     ['환경기후기술', [
-      ['강영수', 'Carbon Resources Conversion Technology'], ['김경모', 'Nuclear Innovation & Safety Laboratory (NIS Lab)'],
-      ['김우열', 'Operando analysis for photo/electro-catalysis lab'], ['김효원', 'Membrane-driven Energy & Environmental Technologies'],
-      ['당정증', 'Fusion Plasma Heating laboratory (FLASH)'], ['오명환', 'Artificial Living Systems (ALS)'],
-      ['임병수', 'Nuclear Fusion & Superconductivity Technology Lab'], ['탄제완', 'Technology for Achieving Net-zero (TAN) Lab'],
+      ['김우열', 'Operando analysis for photo/electro-catalysis lab'], ['오명환', 'Artificial Living Systems (ALS)'],
     ]],
   ];
 
@@ -429,14 +421,6 @@
         <dt>모집대상</dt><dd>타 대학교 학부 2학년 이상 재학생(내국인)</dd>
       </dl>
 
-      <div class="form-downloads">
-        <span>양식 내려받기</span>
-        ${INTERN.files
-          .filter((f) => f.form)
-          .map((f) => `<a href="${f.href}" download="${f.name}">${f.label}</a>`)
-          .join('\n        ')}
-      </div>
-
       <form id="applyForm" class="form-stack" novalidate>
         <input type="hidden" name="program" value="${INTERN.season} ${INTERN.title}">
         <!-- 스팸 방지용 (사람에게는 보이지 않음) -->
@@ -490,6 +474,13 @@
 
         <fieldset class="form-files">
           <legend>제출서류 * <small>PDF·HWP·Word·이미지, 파일당 ${INTERN.maxFileMb}MB · 합계 20MB 이하</small></legend>
+          <div class="form-downloads">
+            <span>양식 내려받기</span>
+            ${INTERN.files
+              .filter((f) => f.form)
+              .map((f) => `<a href="${f.href}" download="${f.name}">${f.label}</a>`)
+              .join('\n            ')}
+          </div>
           <div class="form-field">
             <label for="fileEssay">자기소개서 및 연구계획서 *</label>
             <input type="file" id="fileEssay" name="fileEssay" required accept="${INTERN.accept}">
