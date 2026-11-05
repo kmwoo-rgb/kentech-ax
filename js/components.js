@@ -115,8 +115,7 @@
     files: [
       { label: '모집 포스터', name: '2026 동계 AX 융합 학부인턴 모집 포스터.pdf', href: 'assets/files/2026-winter-intern-poster.pdf' },
       { label: '붙임1. 참여 연구실 및 연구 주제 소개', name: '붙임1. 참여 연구실 및 연구 주제 소개.pdf', href: 'assets/files/2026-winter-intern-labs.pdf' },
-      { label: '붙임2. 지원서 양식', name: '붙임2. 지원서 양식.hwpx', href: 'assets/files/2026-winter-intern-application.hwpx', form: true },
-      { label: '붙임3. 자기소개서 및 연구계획서 양식', name: '붙임3. 자기소개서 및 연구계획서 양식.hwpx', href: 'assets/files/2026-winter-intern-essay.hwpx', form: true },
+      { label: '붙임2. 자기소개서 및 연구계획서 양식', name: '붙임2. 자기소개서 및 연구계획서 양식.hwpx', href: 'assets/files/2026-winter-intern-essay.hwpx', form: true },
     ],
   };
 
@@ -491,10 +490,6 @@
 
         <fieldset class="form-files">
           <legend>제출서류 * <small>PDF·HWP·Word·이미지, 파일당 ${INTERN.maxFileMb}MB · 합계 20MB 이하</small></legend>
-          <div class="form-field">
-            <label for="fileApplication">지원서 *</label>
-            <input type="file" id="fileApplication" name="fileApplication" required accept="${INTERN.accept}">
-          </div>
           <div class="form-field">
             <label for="fileEssay">자기소개서 및 연구계획서 *</label>
             <input type="file" id="fileEssay" name="fileEssay" required accept="${INTERN.accept}">
