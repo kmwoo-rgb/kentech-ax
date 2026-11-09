@@ -122,8 +122,9 @@
   // 참여 연구실 (붙임1 기준): [트랙, [지도교수, 연구실명], ...]
   const LABS = [
     ['에너지AI', [
-      ['김종권', 'TEAT'], ['안수명', 'Robust Energy AI Lab (REAL)'], ['이범식', 'ENergy, Vision Intelligence Lab (ENVI Lab)'],
-      ['이석주', 'Visual Intelligence Energy-Wise (Viewlab)'], ['임혁', 'Sustainable AI Lab'],
+      ['김종권', 'TEAT'], ['신욱철', 'Robust Physical AI & Robotics Lab (RoBustLab)'], ['안수명', 'Robust Energy AI Lab (REAL)'],
+      ['이범식', 'ENergy, Vision Intelligence Lab (ENVI Lab)'], ['이석주', 'Visual Intelligence Energy-Wise (Viewlab)'],
+      ['이현우', 'Computer System Security Lab (CSSLab)'], ['임혁', 'Sustainable AI Lab'],
     ]],
     ['에너지신소재', [
       ['송주현', 'Battery Software Group'], ['오상호', 'Electron Microscopy for Energy Materials via Environment Manipulation (eM3)'],
